@@ -1,48 +1,39 @@
 function Mostrar()
 {
-
-	var menor;
-	var mayor;
 	var numero;
-	var respuesta ='si';
- 	//var contador = 0
-flag = 0;
+	var maximo;
+	var minimo;
+	//var contador=0;
+	var continuar;
+	var flag=0;
 
 
-
-	 do
+do
 {
- numero = parseInt(prompt("Ingrese un Numero..."));
- //contador ++;
+numero = parseInt(prompt("Ingrese un unmero: "));
+//contador ++; sacamos el contador para agregar el flag
 
- //if (contador ==1)
-//{
-
-//	menor =  numero;
-//	mayor = numero;
-
-
+//if (contador ==1) 
 	
- if (numero> mayor || flag ==0)
-{
-	mayor = numero;
+//maximo = numero;
+//minimo = numero;
 
-}
+if (numero > maximo || flag ==0)  // agregamos el flag con valor 0 para que pase a la otra consulta
+ {
+	maximo = numero;
+ }	
+ if (numero < minimo || flag ==0) // idem anterior
+ {
+ minimo = numero;
+ flag =1;  // le asignamos el valor 1 para no ingrese por todos if ya que tenemos valores cargados
+ }
 
-if (numero< menor || flag ==0)
-{
-menor = numero;
+continuar = prompt("Quiere continuar? (si o no) ")
+} while (continuar == "si");
 
- flag = 1;
-}
- respuesta = prompt ("Desea Continuar")	;
-		
 
-	}while (respuesta == "si");     
-	
-	
-	document.getElementById("maximo").value=mayor;
-	document.getElementById("minimo").value=menor;
+document.getElementById('maximo').value=("El maximo es: ") + maximo;
+document.getElementById('minimo').value=("El minimo es: ") + minimo;
 
 
 

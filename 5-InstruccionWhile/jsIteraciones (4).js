@@ -3,16 +3,16 @@ function Mostrar()
 
 	var numero = prompt("ingrese un número entre 0 y 10.");
 
-	while (!(numero > 0 && numero<10 ))
+
+	while (!(numero >0  && numero <10))
 
 	{
 
-	numero=prompt("el numero es invàlido");
-
+	numero = prompt("dato incorrecto")	
 	}
 
-alert("El numero es vàlido");
+	document.getElementById("numero").value = numero;
 
-
+ alert ("dato correcto")
 
 }//FIN DE LA FUNCIÓN

@@ -1,19 +1,33 @@
 function Mostrar()
 {
-	var numero = 1;
+	//alert('iteración while');
+
+	var FormIngreso =1;
+	
+	while(FormIngreso<11)
+
+	{
+
+		alert ("numero :" + FormIngreso);
+		FormIngreso = FormIngreso+1;
+
+
 
 	
-	while(numero<=10)
-{
+	
+	//var numero =1;
+	
+	//while(numero<=10)
 
+//	{
+	
+//		console.log (numero)
+
+//		numero = numero + 1;
 		
-   console.log (numero);
+//	}
 
-  numero ++
-
-}
-
-
-
+	
+	}
 
 }//FIN DE LA FUNCIÓN

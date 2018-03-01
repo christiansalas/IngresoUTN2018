@@ -3,28 +3,25 @@ function Mostrar()
 
 var sexo = prompt("ingrese f ó m .");
 
-//while (sexo !="f" && sexo !="m") condicion que da true cuando el dato es válido
 
-while (!(sexo == 'f'|| sexo == 'm'))
+while (!(sexo=="f" || sexo =="m" )) //condicion que da F cuando el dato no es correcto. 
+//while (sexo!="f" && sexo!="m" ) condicion que da true cuando el dato el valido.
+
 {
-
-
-
-
-sexo = prompt("Ingreso un sexo valido");
-
+sexo = prompt ("ingrese f ó m .")
 }
 
-if (sexo == 'f')
+if (sexo == "f")
 {
-    sexo = "Femenino";
+sexo = "Femenino"
 
 }
 else
 {
-sexo  = "Masculino";
-
+    sexo ="Maculino"
+  
 }
+
 
 document.getElementById('Sexo').value=sexo;
 
