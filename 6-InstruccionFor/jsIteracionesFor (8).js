@@ -1,29 +1,32 @@
 function Mostrar()
 {
-var numero;
-var EsPrimo = true
 
-numero = parseInt(prompt("Ingrese un numero"));
+    var numero;
+    var esPrimo=true;
 
-for (var i = 2 ;i < numero   ; i++)
+    
+    numero = parseInt( prompt("ingrese un numero"))
 
-{
 
-if (numero % i ==0)
-EsPrimo = false 
-break ;
-}
 
-if (EsPrimo)
-
-{
-alert( numero + "es primo");
-
-}
-else 
-{
-
-    alert (numero + "no es primo");
-}
+    for (var i= 2; i < numero; i++ )
+    {
+           
+        if (numero % i == 0)
+        {
+           esPrimo = false
+           break;
+        }
+        
+    }
+  
+    if (esPrimo)
+    {
+        alert (numero + "Es PRIMO")
+    }
+    else
+    {
+        alert(numero+"No es Primo")
+    }
 
 }//FIN DE LA FUNCIÓN

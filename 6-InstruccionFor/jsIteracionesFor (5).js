@@ -1,21 +1,22 @@
 function Mostrar()
 {
-var numero;
 
-for (  ; ; )
-{
-numero = parseInt(prompt("Ingrese un numero :"));
+    var numero
 
 
-if (numero ==9)
-{
-
-    break ;
-
+    for ( ; ; )
+    {
+        numero = parseInt( prompt("ingres in numero"))
+        
     
-}
-
-console.log (numero)
-}
+        if (numero ==9)
+        {
+            break;
+        }
+    console.log (numero)
+    }
+  
 alert ("salimos porque ingreso 9")
+
+
 }//FIN DE LA FUNCIÓN
