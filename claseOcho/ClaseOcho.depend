@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1524005854 source:d:\claseocho\claseocho.c
+	<stdio.h>
+	"ClaseOcho.h"
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
+1524008246 d:\claseocho\claseocho.h
+
+1524006130 source:d:\claseocho\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ClaseOcho.h"
+	<string.h>
+
